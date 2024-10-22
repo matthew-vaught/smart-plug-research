@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aaf6ae02c965a9b1954c64cbaeedd808 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdn.jsdelivr.net/gh/python-visualization/folium@main/folium/templates/leaflet_heat.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aaf6ae02c965a9b1954c64cbaeedd808" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aaf6ae02c965a9b1954c64cbaeedd808 = L.map(
+                "map_aaf6ae02c965a9b1954c64cbaeedd808",
+                {
+                    center: [32.88, -117.235],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 15,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_03cc2279beaabd2bc8760d5324185e25 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_03cc2279beaabd2bc8760d5324185e25.addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+            var heat_map_f533888ea87249544a01600d45fc49ff = L.heatLayer(
+                [[32.882453, -117.234825, 47166.45180546524], [32.877752, -117.237283, 65218.78510950924], [32.881821, -117.233631, 62801.62305481356], [32.881139, -117.237583, 79949.8765956425], [32.884279, -117.240903, 12685.081563491827], [32.879026, -117.242079, 22505.722914310685], [32.885259, -117.239578, 54434.478047484314], [32.883875, -117.240475, 42758.50929014634], [32.878573, -117.235807, 47175.21858807309], [32.875191, -117.234783, 95102.90048428954]],
+                {"blur": 15, "maxZoom": 18, "minOpacity": 0.5, "radius": 25}
+            );
+        
+    
+            heat_map_f533888ea87249544a01600d45fc49ff.addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+            var marker_1c4c3b75693c77ecea3dd778b4f64552 = L.marker(
+                [32.882453, -117.234825],
+                {}
+            ).addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+        var popup_309a48114a4c8072603521d6fd0ba474 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52c87c70a5e8f5e3aba663980bd64965 = $(`<div id="html_52c87c70a5e8f5e3aba663980bd64965" style="width: 100.0%; height: 100.0%;">Atkinson Hall<br>Power Consumption: 47166 mW</div>`)[0];
+                popup_309a48114a4c8072603521d6fd0ba474.setContent(html_52c87c70a5e8f5e3aba663980bd64965);
+            
+        
+
+        marker_1c4c3b75693c77ecea3dd778b4f64552.bindPopup(popup_309a48114a4c8072603521d6fd0ba474)
+        ;
+
+        
+    
+    
+            marker_1c4c3b75693c77ecea3dd778b4f64552.bindTooltip(
+                `<div>
+                     Atkinson Hall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae74a621fd4d8c713a88b4cb500f9516 = L.marker(
+                [32.877752, -117.237283],
+                {}
+            ).addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+        var popup_809b711fb646e8423fd308162138891a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1f5151c5c8e9a9c28473eca0db221d0 = $(`<div id="html_c1f5151c5c8e9a9c28473eca0db221d0" style="width: 100.0%; height: 100.0%;">Center Hall<br>Power Consumption: 65219 mW</div>`)[0];
+                popup_809b711fb646e8423fd308162138891a.setContent(html_c1f5151c5c8e9a9c28473eca0db221d0);
+            
+        
+
+        marker_ae74a621fd4d8c713a88b4cb500f9516.bindPopup(popup_809b711fb646e8423fd308162138891a)
+        ;
+
+        
+    
+    
+            marker_ae74a621fd4d8c713a88b4cb500f9516.bindTooltip(
+                `<div>
+                     Center Hall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48b14bc1e9fee3ec019025d4c2c43772 = L.marker(
+                [32.881821, -117.233631],
+                {}
+            ).addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+        var popup_b4d34c823c68623753e26033669cc7d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a525f435981ee296f492a373d2b8eb32 = $(`<div id="html_a525f435981ee296f492a373d2b8eb32" style="width: 100.0%; height: 100.0%;">EBU3B<br>Power Consumption: 62802 mW</div>`)[0];
+                popup_b4d34c823c68623753e26033669cc7d2.setContent(html_a525f435981ee296f492a373d2b8eb32);
+            
+        
+
+        marker_48b14bc1e9fee3ec019025d4c2c43772.bindPopup(popup_b4d34c823c68623753e26033669cc7d2)
+        ;
+
+        
+    
+    
+            marker_48b14bc1e9fee3ec019025d4c2c43772.bindTooltip(
+                `<div>
+                     EBU3B
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efd525a1a692a3a6c298e04201d283a1 = L.marker(
+                [32.881139, -117.237583],
+                {}
+            ).addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+        var popup_efd6f93154c6d03e122bb8a5e0b7e478 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81567f3cf4a7319aca977a2cb8ac58bb = $(`<div id="html_81567f3cf4a7319aca977a2cb8ac58bb" style="width: 100.0%; height: 100.0%;">Geisel Library<br>Power Consumption: 79950 mW</div>`)[0];
+                popup_efd6f93154c6d03e122bb8a5e0b7e478.setContent(html_81567f3cf4a7319aca977a2cb8ac58bb);
+            
+        
+
+        marker_efd525a1a692a3a6c298e04201d283a1.bindPopup(popup_efd6f93154c6d03e122bb8a5e0b7e478)
+        ;
+
+        
+    
+    
+            marker_efd525a1a692a3a6c298e04201d283a1.bindTooltip(
+                `<div>
+                     Geisel Library
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b9514dad6dab34d1ea61e2ac122f52c4 = L.marker(
+                [32.884279, -117.240903],
+                {}
+            ).addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+        var popup_2f5842e235eafa1c6e3881f868939a38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95cb76bd739c0e0a2aac686e8b4818e0 = $(`<div id="html_95cb76bd739c0e0a2aac686e8b4818e0" style="width: 100.0%; height: 100.0%;">IRPS Robinson Hall<br>Power Consumption: 12685 mW</div>`)[0];
+                popup_2f5842e235eafa1c6e3881f868939a38.setContent(html_95cb76bd739c0e0a2aac686e8b4818e0);
+            
+        
+
+        marker_b9514dad6dab34d1ea61e2ac122f52c4.bindPopup(popup_2f5842e235eafa1c6e3881f868939a38)
+        ;
+
+        
+    
+    
+            marker_b9514dad6dab34d1ea61e2ac122f52c4.bindTooltip(
+                `<div>
+                     IRPS Robinson Hall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b159da6e9cbfe9d959c7a1cc200d829 = L.marker(
+                [32.879026, -117.242079],
+                {}
+            ).addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+        var popup_0fb4b1084e3a926463dbb47f9233b3d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4710321fd639175d2a6b9d79127dec71 = $(`<div id="html_4710321fd639175d2a6b9d79127dec71" style="width: 100.0%; height: 100.0%;">McGill Hall<br>Power Consumption: 22506 mW</div>`)[0];
+                popup_0fb4b1084e3a926463dbb47f9233b3d9.setContent(html_4710321fd639175d2a6b9d79127dec71);
+            
+        
+
+        marker_5b159da6e9cbfe9d959c7a1cc200d829.bindPopup(popup_0fb4b1084e3a926463dbb47f9233b3d9)
+        ;
+
+        
+    
+    
+            marker_5b159da6e9cbfe9d959c7a1cc200d829.bindTooltip(
+                `<div>
+                     McGill Hall
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9d811344bccb6a93410e207316d15679 = L.marker(
+                [32.885259, -117.239578],
+                {}
+            ).addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+        var popup_4228e81aefad0f729111b62503791edc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86ee5f3c1568febdb21c846fefe4960a = $(`<div id="html_86ee5f3c1568febdb21c846fefe4960a" style="width: 100.0%; height: 100.0%;">RIMAC<br>Power Consumption: 54434 mW</div>`)[0];
+                popup_4228e81aefad0f729111b62503791edc.setContent(html_86ee5f3c1568febdb21c846fefe4960a);
+            
+        
+
+        marker_9d811344bccb6a93410e207316d15679.bindPopup(popup_4228e81aefad0f729111b62503791edc)
+        ;
+
+        
+    
+    
+            marker_9d811344bccb6a93410e207316d15679.bindTooltip(
+                `<div>
+                     RIMAC
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_673d882f69f424aae822afb25620bd3c = L.marker(
+                [32.883875, -117.240475],
+                {}
+            ).addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+        var popup_64ba31a581b8f2cb0f544936d2c247f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e9e05f4dee6fe76b0e3f736191fb5a6 = $(`<div id="html_3e9e05f4dee6fe76b0e3f736191fb5a6" style="width: 100.0%; height: 100.0%;">Social Sciences Building<br>Power Consumption: 42759 mW</div>`)[0];
+                popup_64ba31a581b8f2cb0f544936d2c247f7.setContent(html_3e9e05f4dee6fe76b0e3f736191fb5a6);
+            
+        
+
+        marker_673d882f69f424aae822afb25620bd3c.bindPopup(popup_64ba31a581b8f2cb0f544936d2c247f7)
+        ;
+
+        
+    
+    
+            marker_673d882f69f424aae822afb25620bd3c.bindTooltip(
+                `<div>
+                     Social Sciences Building
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e0c0855af04296be627e9b0e99b84aba = L.marker(
+                [32.878573, -117.235807],
+                {}
+            ).addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+        var popup_b4f91893844fb074811594188761e076 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6910953aef583f6c879a18f5b401a513 = $(`<div id="html_6910953aef583f6c879a18f5b401a513" style="width: 100.0%; height: 100.0%;">Student Services Center<br>Power Consumption: 47175 mW</div>`)[0];
+                popup_b4f91893844fb074811594188761e076.setContent(html_6910953aef583f6c879a18f5b401a513);
+            
+        
+
+        marker_e0c0855af04296be627e9b0e99b84aba.bindPopup(popup_b4f91893844fb074811594188761e076)
+        ;
+
+        
+    
+    
+            marker_e0c0855af04296be627e9b0e99b84aba.bindTooltip(
+                `<div>
+                     Student Services Center
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca12a0d0a4ce8239c0f02f0072d35cab = L.marker(
+                [32.875191, -117.234783],
+                {}
+            ).addTo(map_aaf6ae02c965a9b1954c64cbaeedd808);
+        
+    
+        var popup_a2b56af72a07f93bef07ed73916be57a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_001a1ee9dba65e9e6c54468aae8e1786 = $(`<div id="html_001a1ee9dba65e9e6c54468aae8e1786" style="width: 100.0%; height: 100.0%;">Telemed<br>Power Consumption: 95103 mW</div>`)[0];
+                popup_a2b56af72a07f93bef07ed73916be57a.setContent(html_001a1ee9dba65e9e6c54468aae8e1786);
+            
+        
+
+        marker_ca12a0d0a4ce8239c0f02f0072d35cab.bindPopup(popup_a2b56af72a07f93bef07ed73916be57a)
+        ;
+
+        
+    
+    
+            marker_ca12a0d0a4ce8239c0f02f0072d35cab.bindTooltip(
+                `<div>
+                     Telemed
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
