@@ -27,6 +27,11 @@ The ultimate goal is to highlight opportunities for more efficient energy use on
 
 ## Methods & Tools
 
+- ## Data Acquisition
+  - Data was stored in an **InfluxDB** time-series database.  
+  - Developed custom **SQL-style queries** to efficiently extract plug-level power readings for analysis.  
+  - Queried and exported millions of rows for downstream processing in Python.
+
 - **Data Cleaning & Aggregation**:  
   - Converted minute-level readings into hourly, daily, and weekly consumption trends.  
   - Filtered erroneous values and standardized timestamps.  
