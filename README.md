@@ -9,8 +9,7 @@ This repository contains notebooks and supporting files for my research on **sma
 This project investigates how energy usage varies across buildings and devices when measured at the plug level. The motivation was to:
 
 - Understand how much power is consumed by devices connected through smart plugs.  
-- Compare plug-level usage with total building loads to identify discrepancies.  
-- Detect anomalous events in time series power data, such as data spikes or load transfers.  
+- Compare plug-level usage with total building loads to identify discrepancies.    
 - Visualize consumption patterns across time (daily, weekly, seasonal) and geography.  
 
 The ultimate goal is to highlight opportunities for more efficient energy use on campus.
