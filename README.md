@@ -36,9 +36,8 @@ The ultimate goal is to highlight opportunities for more efficient energy use on
   - Geospatial heatmaps across California buildings using H3 hex bins.  
 
 - **Statistical Methods**:  
-  - Pearson correlation between plug-level and building-level usage.  
-  - Rolling z-scores to detect spikes and anomalies.  
-  - Change point detection to identify load transfers.  
+  - Pearson correlation between plug-level and building-level usage.
+  - Peak load identification to study high-demand hours.
 
 - **Tools**: Python — Pandas, NumPy, Matplotlib, Plotly, H3, scikit-learn.
 
@@ -47,8 +46,7 @@ The ultimate goal is to highlight opportunities for more efficient energy use on
 ## Key Findings & Insights
 
 - Plug-level consumption patterns clearly reflected **daily, weekly, and seasonal cycles**.  
-- Strong correlations (but not perfect) between plug-level sums and building meter totals revealed how much of each building’s consumption could be explained by monitored plugs.  
-- Anomaly detection highlighted **data spikes** and **load transfer events**, which were previously identified only through manual review.  
+- Strong correlations (but not perfect) between plug-level sums and building meter totals revealed how much of each building’s consumption could be explained by monitored plugs.    
 - Geospatial heatmaps provided a new perspective on how energy consumption changes across campus geography.  
 
 ---
